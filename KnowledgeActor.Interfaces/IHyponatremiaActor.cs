@@ -8,8 +8,8 @@ using Microsoft.ServiceFabric.Actors;
 namespace KnowledgeActor.Interfaces
 {
 
-    public interface IKnowledgeActor : IActor
+    public interface IHyponatremiaActor : IActor
     {
-
+        void MakeTransition(double input);
     }
 }

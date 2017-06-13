@@ -1,9 +1,10 @@
 ﻿using Microsoft.ServiceFabric.Actors;
 using Microsoft.ServiceFabric.Actors.Runtime;
+using KnowledgeActor.Interfaces;
 
 namespace KnowledgeActor
 {
-    class HyponatremiaActor : ThresholdTypeActor
+    class HyponatremiaActor : ThresholdTypeActor, IHyponatremiaActor
     {
         public HyponatremiaActor(ActorService actorService, ActorId actorId) : base(actorService, actorId)
         {
@@ -14,7 +15,7 @@ namespace KnowledgeActor
             Threshold = 120;
         }
 
-        void MakeTransition(double input)
+        public void MakeTransition(double input)
         {
             if (input <= Threshold)
             {

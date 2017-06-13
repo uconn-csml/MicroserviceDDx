@@ -12,7 +12,7 @@ namespace KnowledgeActor
 {
 
     [StatePersistence(StatePersistence.Persisted)]
-    internal class KnowledgeActor : Actor, IKnowledgeActor
+    internal class KnowledgeActor : Actor
     {
         internal IState currentState;
         internal IState undecidedState;

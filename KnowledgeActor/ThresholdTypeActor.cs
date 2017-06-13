@@ -1,4 +1,5 @@
-﻿using Microsoft.ServiceFabric.Actors;
+﻿using KnowledgeActor.Interfaces;
+using Microsoft.ServiceFabric.Actors;
 using Microsoft.ServiceFabric.Actors.Runtime;
 
 namespace KnowledgeActor
