@@ -10,6 +10,6 @@ namespace KnowledgeActor.Interfaces
 
     public interface IHyponatremiaActor : IActor
     {
-        void MakeTransition(double input);
+        string MakeTransition(double input);
     }
 }

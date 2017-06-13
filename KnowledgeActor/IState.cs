@@ -8,5 +8,6 @@ namespace KnowledgeActor
 {
     interface IState
     {
+        string Output { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace KnowledgeActor
 {
 
     [StatePersistence(StatePersistence.Persisted)]
-    internal class KnowledgeActor : Actor
+    public class KnowledgeActor : Microsoft.ServiceFabric.Actors.Runtime.Actor
     {
         internal IState currentState;
         internal IState undecidedState;

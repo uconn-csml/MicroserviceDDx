@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace KnowledgeActor
 {
-    class State1 : State, IState
+    public class State1 : IState
     {
-        public State1(string output) : base(output)
+        public string Output { get; set; }
+
+        public State1(string output)
         {
+            this.Output = output;
         }
     }
 }

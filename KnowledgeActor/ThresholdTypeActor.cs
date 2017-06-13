@@ -4,7 +4,7 @@ using Microsoft.ServiceFabric.Actors.Runtime;
 
 namespace KnowledgeActor
 {
-    class ThresholdTypeActor : KnowledgeActor
+    public class ThresholdTypeActor : KnowledgeActor
     {
         private double threshold;
 

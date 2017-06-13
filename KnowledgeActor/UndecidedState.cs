@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace KnowledgeActor
 {
-    class UndecidedState : State, IState
+    class UndecidedState : IState
     {
-        public UndecidedState(string output) : base(output)
+        public string Output { get; set; }
+
+        public UndecidedState(string output)
         {
+            this.Output = output;
         }
     }
 }

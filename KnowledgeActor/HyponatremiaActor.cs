@@ -15,7 +15,7 @@ namespace KnowledgeActor
             Threshold = 120;
         }
 
-        public void MakeTransition(double input)
+        public string MakeTransition(double input)
         {
             if (input <= Threshold)
             {
@@ -24,6 +24,8 @@ namespace KnowledgeActor
             {
                 this.currentState = state2;
             }
+
+            return this.currentState.Output;
         }
     }
 }
